@@ -10,9 +10,10 @@ def inicia_automacao():
 
 	if tamanho_link == 23 and link == "https://www.youtube.com":
 
+		pyautogui.PAUSE = 0.5
+
 		pyautogui.press('winleft')
 		pyautogui.write(" Chrome", interval=0.2)
-		sleep(0.5)
 		pyautogui.press('enter')
 		sleep(4)
 		pyautogui.write("https://www.youtube.com", interval=0.1)
